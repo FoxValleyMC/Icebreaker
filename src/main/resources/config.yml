@@ -1,0 +1,5 @@
+database: ""
+collection: ""
+
+# there must always be one default group as a fail-safe
+default-group: "guest"

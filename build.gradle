@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+}
+
+group 'IceBreaker'
+version '1.0.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    maven {
+        url "http://repo.nukkitx.com/main/"
+    }
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+dependencies {
+    implementation "cn.nukkit:nukkit:1.0-SNAPSHOT"
+    implementation "com.github.TimelessMC:NukkitDB:2f1a19fd8183c4f59f9295a6af111f168c047e3b"
+    implementation "com.github.TimelessMC:AliasPro:77ca8298e115764783046025383362c5a3a97359"
+}
+
+jar {
+    manifest {
+        attributes "Main-Class": "Icebreaker.Main"
+    }
+}

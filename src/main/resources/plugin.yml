@@ -1,0 +1,33 @@
+name: Icebreaker
+main: Icebreaker.Main
+api: 1.0.0
+version: 1.0.0
+author: iAtomPlaza
+softdepend:
+  - AfterLife
+  - AliasPro
+
+depend:
+  - NukkitDB
+
+permissions:
+
+  icebreaker.create:
+    description: allows creation of groups/ranks
+    default: op
+
+  icebreaker.remove:
+    description: allows removal of groups/ranks
+    default: op
+
+  icebreaker.format:
+    description: allows seting/changing of chat group/rank formats
+    default: op
+
+  icebreaker.set:
+    description: allows asigning players to group/ranks
+    default: op
+
+  icebreaker.default:
+    description: allows user to set default group
+    default: op
